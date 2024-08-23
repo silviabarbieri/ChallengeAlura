@@ -44,16 +44,15 @@ function desencriptar(stringDesencriptada){
         textarea.value="";
      }
 
-     
+     //funcion copiar
      document.addEventListener('DOMContentLoaded', function() {
         const copiarBtn = document.getElementById('copiarBtn');
         const mensaje = document.getElementById('mensaje');
     
         copiarBtn.addEventListener('click', function() {
             // Selecciona el texto en el área de texto
-            mensaje.select();
+           mensaje.select();
             mensaje.setSelectionRange(0, 99999); // Para dispositivos móviles
-    
             try {
                 // Copia el texto al portapapeles
                 document.execCommand('copy');
@@ -64,7 +63,7 @@ function desencriptar(stringDesencriptada){
         });
     });
 
-   
+    
     
     
     
